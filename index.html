@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #leaderboardContainer { margin-top: 20px; text-align: center; }
+        #leaderboardList { list-style-type: none; padding-left: 0; }
+        #leaderboardList li { padding: 2px 0; }
+        #nameFormContainer { margin-top: 10px; text-align: center; display: none; }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="nameFormContainer">
+        <h3>High Score! Enter Your Name:</h3>
+        <form id="nameForm">
+            <input type="text" id="playerNameInput" placeholder="Your Name" maxlength="15" required />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="leaderboardContainer">
+        <h2>Leaderboard</h2>
+        <ol id="leaderboardList"></ol>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
